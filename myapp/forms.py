@@ -16,4 +16,5 @@ class SampleForm(forms.Form):
     Gender=forms.ChoiceField(choices=[('Male','Male'),('Female','Female'),('other','other')],widget=forms.RadioSelect)
     Prog_Languages=forms.MultipleChoiceField(choices=[('C','C'),('C++','C++'),('C#','C#'),('Python','Python'),('Java','Java'),('Ruby','Ruby')],widget=forms.CheckboxSelectMultiple)
     Languages=forms.MultipleChoiceField(choices=[('Telugu','Telugu'),('English','English'),('Kanada','Kanada')],widget=forms.CheckboxSelectMultiple)
+    Image=forms.ImageField(required=True,label='Profile Pic')
     
